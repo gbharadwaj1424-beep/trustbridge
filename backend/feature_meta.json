@@ -1,0 +1,79 @@
+{
+  "features": [
+    {
+      "name": "upi_txn_frequency",
+      "label": "Digital transaction frequency (per month)",
+      "direction": "+",
+      "description": "How often the person transacts digitally (UPI/wallet) per month."
+    },
+    {
+      "name": "upi_txn_regularity",
+      "label": "Transaction regularity score (0-100)",
+      "direction": "+",
+      "description": "How consistent transaction timing/amounts are, month to month."
+    },
+    {
+      "name": "avg_monthly_inflow",
+      "label": "Average monthly digital inflow (INR)",
+      "direction": "+",
+      "description": "Average money received digitally per month (proxy for earnings)."
+    },
+    {
+      "name": "recharge_regularity",
+      "label": "Mobile recharge regularity (0-100)",
+      "direction": "+",
+      "description": "Consistency of prepaid mobile recharges \u2014 a known proxy for stable routine."
+    },
+    {
+      "name": "utility_payment_timeliness",
+      "label": "Utility bill payment timeliness (%)",
+      "direction": "+",
+      "description": "Percent of electricity/water/gas bills paid on or before due date."
+    },
+    {
+      "name": "savings_growth_6m",
+      "label": "Savings/wallet balance growth over 6 months (%)",
+      "direction": "+",
+      "description": "Trend in digital wallet or savings balance over the last 6 months."
+    },
+    {
+      "name": "peer_vouches",
+      "label": "Verified peer/community vouches (0-5)",
+      "direction": "+",
+      "description": "Number of verified vouches from community members or trade association."
+    },
+    {
+      "name": "business_vintage_months",
+      "label": "Business/work vintage (months)",
+      "direction": "+",
+      "description": "How long the person has been doing this work or running this business."
+    },
+    {
+      "name": "geo_stability",
+      "label": "Location stability score (0-100)",
+      "direction": "+",
+      "description": "How stable the person's operating location / service area is over time."
+    },
+    {
+      "name": "digital_footprint_diversity",
+      "label": "Digital footprint diversity (0-100)",
+      "direction": "+",
+      "description": "Diversity of everyday app usage (marketplace, delivery, payments, etc.)."
+    }
+  ],
+  "coefficients": {
+    "upi_txn_frequency": 0.1763389154049036,
+    "upi_txn_regularity": 0.7903465400306537,
+    "avg_monthly_inflow": 0.15044280010850464,
+    "recharge_regularity": 0.6444042727689675,
+    "utility_payment_timeliness": 0.6625951259301878,
+    "savings_growth_6m": 0.53755865526354,
+    "peer_vouches": 0.5798133672872824,
+    "business_vintage_months": 0.1631752033601647,
+    "geo_stability": 0.41077273476335235,
+    "digital_footprint_diversity": 0.26201543610336725
+  },
+  "intercept": 1.087816855795993,
+  "val_auc": 0.8316254688360066,
+  "val_accuracy": 0.7716666666666666
+}
